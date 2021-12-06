@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
-  runApp(new MaterialApp(
+  runApp(const MaterialApp(
     home: MyApp(
       title: 'Arizu SMM',
     ),
@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: new WebView(
+    return const Scaffold(
+      body: WebView(
         initialUrl: "https://smm.arizu.my.id/m/",
         javascriptMode: JavascriptMode.unrestricted,
       ),
